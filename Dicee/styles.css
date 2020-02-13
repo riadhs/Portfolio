@@ -1,0 +1,71 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.PlayButton{
+  background-color: #9C060C;
+  color: #4ECCA3;
+  font-size: 2.5rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  width: 10%;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  margin: 5%;
+
+}
+
+.PlayButton:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #393E46;
+}
+
+h1 {
+  margin: 1.875%;
+  padding: auto 5%;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 7.10rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 4.5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .PlayButton{
+    display: block;
+    position: relative;
+width: 40%;
+text-align: center;
+margin: 7%;
+left: 24%;
+  }
+}
