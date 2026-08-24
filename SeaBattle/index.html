@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sea Battle // iPhone Edition</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="air-raid.css">
+  <link rel="stylesheet" href="air-raid-align.css">
+  <link rel="stylesheet" href="air-raid-realism.css">
+  <link rel="stylesheet" href="air-raid-realism-v2.css">
+  <link rel="stylesheet" href="air-raid-target.css">
+  <link rel="stylesheet" href="result-styles.css">
+</head>
+<body>
+  <main class="phone">
+    <header class="topbar"><a href="../index.html">&larr; Portfolio</a><span>SEA BATTLE / GAME 03</span></header>
+    <section class="screen" aria-labelledby="title">
+      <div class="heading"><div><p class="eyebrow">IPHONE CLASSIC</p><h1 id="title">Sea Battle</h1></div><div class="status" id="status" aria-live="polite">YOUR TURN</div></div>
+      <div class="setup" id="setup"><span>PLACE YOUR FLEET</span><button id="rotate" type="button">Rotate</button><button id="randomize" type="button">Randomize</button></div>
+      <div class="boards">
+        <div class="board-card"><div class="board-title"><span>YOU</span><span id="player-count">0 / 5</span></div><div class="board" id="player-board" role="grid" aria-label="Your fleet board"></div></div>
+        <div class="board-card"><div class="board-title"><span>ENEMY</span><span id="enemy-count">0 / 5</span></div><div class="board" id="enemy-board" role="grid" aria-label="Enemy attack board"></div><div class="air-raid" id="air-raid" aria-hidden="true"><span class="contrail"></span><span class="plane"><svg viewBox="0 0 100 36" role="img" aria-label="Aircraft"><path d="M4 19h31L48 4h8l-3 15h24l13-8h6l-9 11 9 8h-6l-13-7H53l3 13h-8L35 23H4z" fill="currentColor"/><path d="M8 19h67M49 20l-6 5" fill="none" stroke="#e8f2f3" stroke-width="2" opacity=".6"/></svg></span><span class="bomb"><svg viewBox="0 0 28 44" role="img" aria-label="Bomb"><path d="M14 4c5 0 8 5 8 14 0 10-3 17-8 17S6 28 6 18C6 9 9 4 14 4z" fill="currentColor"/><path d="M6 13 1 9v10l5-2M22 13l5-4v10l-5-2" fill="currentColor"/><path d="M14 35v6M10 39h8" stroke="currentColor" stroke-width="3"/></svg></span></div></div>
+      </div>
+      <div class="fleet" id="fleet" aria-label="Fleet status"></div>
+      <div class="actions"><button id="start" type="button">Start battle</button><button id="new-game" type="button">New game</button></div>
+      <p class="hint">Place every ship, then tap an enemy square to fire. Sink the fleet to win.</p>
+    </section>
+    <footer class="footer"><span>IPHONE / 1990s INSPIRED</span><span id="turns">TURNS 00</span></footer>
+  </main>
+  <script src="game.js"></script>
+  <script src="air-raid.js"></script>
+</body>
+</html>

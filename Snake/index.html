@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake // Nokia Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone-shell">
+    <header class="phone-header">
+      <a href="../index.html" class="back-link">&larr; Portfolio</a>
+      <span class="signal" aria-hidden="true">▮▮▮</span>
+    </header>
+    <section class="screen-wrap" aria-labelledby="game-title">
+      <div class="screen-heading">
+        <div><p class="kicker">NOKIA 3310 / 1990s</p><h1 id="game-title">Snake</h1></div>
+        <div class="stats" aria-live="polite"><span>SCORE <b id="score">000</b></span><span>BEST <b id="best">000</b></span></div>
+      </div>
+      <div class="game-frame">
+        <canvas id="game" width="360" height="360" aria-label="Snake game board"></canvas>
+        <div class="game-message" id="message">PRESS START</div>
+      </div>
+      <div class="controls-row">
+        <button id="start" type="button">Start game</button>
+        <button id="pause" type="button">Pause</button>
+      </div>
+      <div class="d-pad" aria-label="Game controls">
+        <button data-direction="up" aria-label="Move up">&#9650;</button>
+        <button data-direction="left" aria-label="Move left">&#9664;</button>
+        <button data-direction="down" aria-label="Move down">&#9660;</button>
+        <button data-direction="right" aria-label="Move right">&#9654;</button>
+      </div>
+      <p class="hint">Use arrow keys, WASD, or swipe to move. Collect the dots. Do not hit the wall.</p>
+    </section>
+    <footer class="phone-footer"><span>GAME 01</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
