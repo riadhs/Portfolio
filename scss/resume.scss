@@ -6,21 +6,21 @@
 @import "bootstrap-overrides.scss";
 
 :root {
-	--ink: #142536;
-	--ink-soft: #344754;
-	--paper: #f5f7f8;
+	--ink: #202326;
+	--ink-soft: #3f4a4c;
+	--paper: #f7f3eb;
 	--white: #ffffff;
-	--muted: #65757e;
-	--line: #d9e1e5;
-	--sage: #e7eff1;
-	--lime: #a8d8ff;
-	--coral: #e77961;
+	--muted: #6c7472;
+	--line: #ded8cb;
+	--sage: #e5ece6;
+	--lime: #d4b15b;
+	--coral: #19858a;
 	--serif: "DM Serif Display", Georgia, serif;
 	--sans: "DM Sans", "Segoe UI", sans-serif;
 }
 
 html { overflow-x: hidden; scroll-behavior: smooth; }
-body { background: #dce7ed; color: var(--ink-soft); font-family: var(--sans); font-size: 1rem; line-height: 1.75; padding-top: 54px; }
+body { background: #dfe8e3; color: var(--ink-soft); font-family: var(--sans); font-size: 1rem; line-height: 1.75; padding-top: 54px; }
 .skip-link { background: var(--lime); color: var(--ink); font-weight: 700; left: 1rem; padding: .5rem 1rem; position: absolute; top: -4rem; z-index: 1000; }
 .skip-link:focus { top: 1rem; }
 h1, h2, h3, h4, h5, h6 { color: var(--ink); font-family: var(--serif); font-weight: 400; letter-spacing: 0; text-transform: none; }
@@ -29,7 +29,7 @@ h2 { font-size: clamp(2.6rem, 5vw, 4.4rem); line-height: 1; margin-bottom: 3rem 
 h3 { font-size: 1.7rem; line-height: 1.2; }
 p.lead { color: var(--ink-soft); font-size: 1.1rem; }
 a { color: var(--ink); text-decoration-color: var(--coral); text-decoration-thickness: 2px; text-underline-offset: 4px; }
-a:hover, a:focus, a:active { color: #a44733; }
+a:hover, a:focus, a:active { color: #10676b; }
 #sideNav { background: var(--ink) !important; }
 #sideNav .navbar-brand { color: var(--white); font-weight: 700; }
 #sideNav .navbar-brand .img-profile { border: 3px solid var(--lime); }
@@ -41,7 +41,7 @@ section.resume-section:nth-of-type(even) { background: var(--white); }
 .section-inner { max-width: 72rem; }
 #about { background: var(--paper); min-height: min(48rem, 100vh); }
 .hero-content { padding-top: 2rem; }
-.eyebrow, .subheading { color: #9d4a38; font-size: .78rem; font-weight: 700; letter-spacing: .15em; margin-bottom: 1.5rem; text-transform: uppercase; }
+.eyebrow, .subheading { color: #a27622; font-size: .78rem; font-weight: 700; letter-spacing: .15em; margin-bottom: 1.5rem; text-transform: uppercase; }
 .hero-intro { color: var(--ink); font-family: var(--serif); font-size: clamp(1.35rem, 2.5vw, 2rem); line-height: 1.35; margin: 2rem 0 1.5rem; max-width: 30rem; }
 .hero-content .subheading { margin-bottom: 2.5rem; }
 .hero-content .subheading a { color: var(--ink); }
@@ -49,9 +49,9 @@ section.resume-section:nth-of-type(even) { background: var(--white); }
 .hero-link span { color: var(--coral); font-size: 1.25rem; margin-left: .5rem; }
 .social-icons { display: flex; gap: .65rem; }
 .social-icons a { align-items: center; background: var(--ink); border-radius: 50%; color: var(--white) !important; display: inline-flex; height: 2.8rem; justify-content: center; margin: 0; transition: background .2s ease, transform .2s ease; width: 2.8rem; }
-.social-icons a:hover { background: #9d4a38; transform: translateY(-3px); }
+.social-icons a:hover { background: var(--coral); transform: translateY(-3px); }
 .resume-item { border-left: 2px solid var(--coral); padding-left: 1.5rem; }
-.resume-item .resume-date { color: #9d4a38; font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.resume-item .resume-date { color: #a27622; font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .resume-item .resume-date { background: transparent !important; border: 1px solid #b7c5bb; display: inline-block; padding: .55rem .7rem; }
 .resume-content .subheading { margin-bottom: .75rem; }
 #projects ul { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; }
@@ -66,12 +66,12 @@ section.resume-section:nth-of-type(even) { background: var(--white); }
 .skill-group .dev-icons { margin-bottom: 0; }
 .dev-icons .list-inline-item { margin: 0; }
 .dev-icons i { background: var(--paper); border: 1px solid var(--line); color: var(--ink); font-size: 1.6rem; padding: .8rem; transition: color .2s ease, border-color .2s ease; }
-.dev-icons i:hover { border-color: var(--coral); color: #9d4a38; }
+.dev-icons i:hover { border-color: var(--coral); color: #10676b; }
 .label-des { display: block; font-family: var(--sans); font-size: .55rem; font-style: normal; font-weight: 700; letter-spacing: .05em; margin-top: .3rem; text-transform: uppercase; }
 #skills .fa-ul, #awards .fa-ul { padding-left: 0; }
 #skills .fa-ul li, #awards .fa-ul li { margin-bottom: .75rem; }
 #skills .fa-li, #awards .fa-li { color: var(--coral); }
-.text-primary { color: #9d4a38 !important; }
+.text-primary { color: #a27622 !important; }
 .bg-primary { background: var(--ink) !important; }
 
 @media (min-width: 992px) {
