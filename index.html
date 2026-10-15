@@ -19,6 +19,45 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css?v=20260823" rel="stylesheet">
+  <!-- Responsive layout overrides: self-contained, no additional CSS file needed -->
+  <style>
+    html, body { width: 100%; max-width: 100%; overflow-x: clip; }
+    main.container-fluid { width: 100%; max-width: none; min-width: 0; margin: 0; }
+    main.container-fluid > section.resume-section { width: 100%; max-width: none !important; box-sizing: border-box; }
+    .resume-section > .w-100, .resume-section .section-inner, #experience .w-100 { width: 100%; max-width: none; min-width: 0; }
+    #about .hero-content { width: 100%; max-width: none; min-width: 0; }
+    #about .hero-intro { max-width: 65rem; }
+    #about p.lead { max-width: none; }
+    #experience .resume-item.d-flex { grid-template-columns: minmax(0, 1fr) minmax(11rem, 14rem); width: 100%; }
+    #experience .resume-item .resume-content { max-width: none; min-width: 0; }
+    #education .resume-item .resume-content { flex: 1 1 auto; min-width: 0; }
+    #education .resume-item .resume-date { flex: 0 0 auto; }
+    .resume-section p, .resume-section a, .resume-section h1, .resume-section h2, .resume-section h3 { overflow-wrap: break-word; }
+    @media (min-width: 992px) {
+      main.container-fluid > section.resume-section { padding-left: clamp(2.5rem, 4vw, 7rem) !important; padding-right: clamp(2.5rem, 4vw, 7rem) !important; }
+      #projects ul, .skill-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1800px) {
+      main.container-fluid > section.resume-section { padding-left: clamp(4rem, 5vw, 9rem) !important; padding-right: clamp(4rem, 5vw, 9rem) !important; }
+      #projects ul, .skill-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      main.container-fluid > section.resume-section { padding: 4rem 2.5rem !important; }
+      #experience .resume-item.d-flex { grid-template-columns: minmax(0, 1fr) 11rem; gap: 1rem; }
+    }
+    @media (max-width: 767.98px) {
+      main.container-fluid > section.resume-section { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+      #about h1 { font-size: clamp(3rem, 13vw, 5rem); line-height: 1; }
+      #about .hero-content { width: 100%; }
+      #experience .resume-item.d-flex { display: block !important; }
+      #experience .resume-item .resume-date { display: inline-block; margin-top: 1rem; min-width: 0; }
+      #education .resume-item { flex-direction: column !important; align-items: flex-start; }
+      #education .resume-item .resume-date { margin-top: 1rem; min-width: 0; max-width: 100%; }
+      #projects ul, .skill-groups { grid-template-columns: minmax(0, 1fr); }
+      #projects li { min-width: 0; }
+      .subheading { overflow-wrap: anywhere; }
+    }
+  </style>
 </head>
 
 <body id="page-top">
